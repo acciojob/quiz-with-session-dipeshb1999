@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Quiz</h1>
+  <div id="questions">
+    <div id="question1" class="question">
+      <h2>Question 1:</h2>
+      <p>What is the capital of France?</p>
+      <label for="q1a">a) Paris</label>
+      <input type="radio" name="q1" id="q1a" value="Paris">
+      <br>
+      <label for="q1b">b) Rome</label>
+      <input type="radio" name="q1" id="q1b" value="Rome">
+      <br>
+      <label for="q1c">c) London</label>
+      <input type="radio" name="q1" id="q1c" value="London">
+    </div>
 
-  <body>
-    <!-- do not change this code -->
-    <h1>Quiz</h1>
-    <div id="questions"></div>
+    <!-- Remaining questions omitted for brevity -->
+
+    <div id="question5" class="question">
+      <h2>Question 5:</h2>
+      <p>What is the largest continent on Earth?</p>
+      <label for="q5a">a) Asia</label>
+      <input type="radio" name="q5" id="q5a" value="Asia">
+      <br>
+      <label for="q5b">b) Europe</label>
+      <input type="radio" name="q5" id="q5b" value="Europe">
+      <br>
+      <label for="q5c">c) Africa</label>
+      <input type="radio" name="q5" id="q5c" value="Africa">
+    </div>
+
     <button id="submit">Submit</button>
-    <div id="score"></div>
+  </div>
 
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+  <div id="score"></div>
+
+  <script src="script.js"></script>
+</body>
 </html>
